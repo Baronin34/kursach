@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'kursovaya.urls'
@@ -69,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'kursovaya.wsgi.application'
+WSGI_APPLICATION = 'kursovaya.wsgi.application' 
 
 
 # Database
@@ -77,8 +78,12 @@ WSGI_APPLICATION = 'kursovaya.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'baronin',
+        'USER': 'postgres',
+        'PASSWORD': 'ps_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
