@@ -1,9 +1,0 @@
-django
-dj-database-url
-django-heroku
-djangorestframework
-markdown
-django-filter
-pyyaml
-gunicorn
-travis

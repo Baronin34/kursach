@@ -1,1 +1,0 @@
-web: gunicorn Kursovaya.wsgi --log-file -

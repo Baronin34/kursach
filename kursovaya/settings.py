@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'kursovaya.wsgi.application' 
+WSGI_APPLICATION = 'kursovaya.wsgi.application'
 
 
 # Database
